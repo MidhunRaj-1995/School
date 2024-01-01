@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block metadescription %}
+Welcome New YorK School Of Management..........
+{% endblock %}
+
+{% block title %}
+
+ E-commerece easy soln
+
+{% endblock %}
+
+{% block content %}
+<div class ="row my_row_class">
+        <div class = "mx-auto col-md-12">
+           <a class ="btn btn-secondary col" href ="{% url 'school_app:login' %}">Login</a>
+        </div>
+</div>
+
+<div>
+    <div class ="row my_row_class">
+        <div class = "mx-auto">
+            <h1><a href = "#" style="text-position:center;">Neyyork School Of Management </a> </h1>
+        </div>
+    </div>
+</div>
+
+<div>
+<img class ="my_image my_image_padding" src ="{% static 'schl.jpg' %}" alt="our products" width="1300" height="600">
+</div>
+<br>
+<div>
+    <h1 class="text-center my_title">School Courses</h1>
+    <p class = "text-justify">Study Masters In Business Admin From Accredited US University. 100% Online Affordable Fee. Affordable Masters In Business Admin From Accredited US University. 100% Online. Fee $1000. Professional Faculty. Job Placement. 24/7...</p>
+</div>
+
+{% endblock %}
+
+
